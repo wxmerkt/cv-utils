@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.8.7)
 project(cv_utils)
 
+add_definitions(-fpermissive) # because LCM on 16.04 throws errors otherwise
 
 option(BUILD_SHARED_LIBS "Build shared libraries" ON)
 set(LIBRARY_OUTPUT_PATH "${CMAKE_BINARY_DIR}/lib")
